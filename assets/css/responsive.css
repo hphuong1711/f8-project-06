@@ -1,0 +1,323 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .container {
+        min-width: 1170px;
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .header {
+        padding: 0 6rem;
+    }
+    .img-tab {
+        display: none;
+    }
+    .header {
+        margin-top: 3rem;
+    }
+    .img-pc .image {
+        max-width: 30%;
+        transform: translateX(150%);
+    }
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        max-width: 100%;
+    }
+    .img-block .men {
+        position: relative;
+        max-width: 100%;
+        width: 514px;
+        z-index: 1;
+        height: 705px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+    .img-block {
+        position: relative;
+    }
+
+    .dot1 {
+        position: absolute;
+        top: 4rem;
+        left: 25rem;
+    }
+    .dot2 {
+        position: absolute;
+        top: 25rem;
+        left: 3rem;
+    }
+    .dot3 {
+        width: 429.458px;
+        height: 81.441px;
+        position: absolute;
+        top: 15rem;
+        left: 15rem;
+        /* z-index: -1; */
+    }
+    .dot4 {
+        position: absolute;
+        top: 28rem;
+        right: 5rem;
+    }
+    .title {
+        width: 500px;
+        font-size: 8rem;
+    }
+    .info {
+        margin-left: 5rem;
+    }
+    .desc {
+        font-size: 1.8rem;
+        width: 370px;
+        margin-top: 1.5rem;
+    }
+    .action {
+        margin-top: 3rem;
+    }
+    .social {
+        margin-top: 2.5rem;
+    }
+    .client {
+        padding-left: 10rem;
+    }
+    .special .desc {
+        width: 534px;
+    }
+    .special-list .desc {
+        width: 285px;
+    }
+    .project .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project .info .desc {
+        width: 370px;
+        color: #dfdbdb;
+    }
+    .project {
+        padding-left: 10rem;
+    }
+    .project-item .desc {
+        width: 220px;
+        font-size: 1.6rem;
+    }
+    /* ------ */
+    .stats-top .sub-title {
+        font-size: 5.6rem;
+    }
+    .stats-top .desc {
+        width: 57rem;
+    }
+    .stats-info-item span {
+        font-size: 5.6rem;
+    }
+    .stats-info {
+        gap: 14rem;
+    }
+    .stats-info-item .label {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .img-pc {
+        display: none;
+    }
+    .img-tab {
+        display: block;
+    }
+    .header-tab {
+        border-top: 1px solid #c1b1b1;
+        border-bottom: 1px solid #c1b1b1;
+    }
+    .header-inner-tab {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2rem 1rem 0;
+    }
+    .img-tab .image {
+        max-width: 20%;
+    }
+    .right {
+        display: flex;
+        gap: 15px;
+    }
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s, ease;
+    }
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-drawer {
+        position: fixed;
+        inset: 0 0 0 40%;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: 0.5s ease;
+        padding: 60px;
+    }
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+    .menu-drawer ul {
+        margin-top: -30px;
+    }
+    .menu-drawer ul a {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 1.6rem;
+        color: #333;
+    }
+    .hero {
+        /* margin-top: 20px; */
+    }
+    .hero .info {
+        padding: 0 2.1rem;
+    }
+    .hero .info .desc {
+        margin-top: 20px;
+    }
+    .action {
+        margin-top: 3rem;
+    }
+    .social {
+        margin-top: 2.5rem;
+    }
+    .hero .img-block img {
+        width: 259px;
+        height: 355px;
+        flex-shrink: 0;
+        object-fit: cover;
+        transform: translateX(20%);
+        z-index: 1;
+    }
+    .dot1 {
+        position: absolute;
+        top: 0;
+        left: 15rem;
+    }
+    .dot2 {
+        position: absolute;
+        bottom: 13rem;
+        left: -5.4rem;
+    }
+
+    .dot4 {
+        position: absolute;
+        top: 9rem;
+        left: 15rem;
+    }
+    .client .sub-title {
+        text-align: center;
+        margin-left: 0;
+    }
+    .client .sub-title::before {
+        top: -1rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .client .list {
+        padding: 2rem;
+    }
+    .special-list {
+        padding: 1rem;
+    }
+    .special-dots {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        transform: translateX(40%);
+    }
+    .special-dot {
+        width: 1.8rem;
+        height: 1.8rem;
+        flex-shrink: 0;
+        border-radius: 50%;
+        opacity: 0.2;
+        background: #080415;
+    }
+    .special-dot-active {
+        position: relative;
+        background-color: #5d3bee;
+        padding: 0.3rem;
+        opacity: 1;
+    }
+    .special-dot-active::before {
+        content: "";
+        position: absolute;
+        width: 2.3rem;
+        height: 2.3rem;
+        border: 1px solid #5d3bee;
+        border-radius: 50%;
+        top: -0.3rem;
+        left: -0.3rem;
+    }
+    .project .desc {
+        margin-top: 2rem;
+        font-style: 1.6rem;
+        color: #efeaea;
+        width: 350px;
+        text-align: center;
+    }
+    .project-item .desc {
+        width: 176px;
+        font-size: 1.4rem;
+        text-align: left;
+        color: #787489;
+    }
+    .project-item img {
+        width: 122px;
+        height: 93px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+    .project .sub-title {
+        text-align: center;
+        font-size: 3.6rem;
+    }
+    .project-item h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    /* ------ */
+    .stats-top .sub-title {
+        font-size: 3.2rem;
+    }
+    .stats-top .desc {
+        width: 35rem;
+    }
+    .stats-info-item span {
+        font-size: 3rem;
+    }
+    .stats-info {
+        gap: 3rem;
+    }
+    .stats-info-item {
+        width: 8.3rem;
+    }
+    .stats-info-item .label {
+        font-size: 1.6rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+}
